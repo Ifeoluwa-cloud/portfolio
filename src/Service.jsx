@@ -1,0 +1,16 @@
+
+const Service = () => {
+  return (
+      <>
+        <div className='bg-white relative z-50'>
+            <div className='flex justify-center items-center'>
+                    <h2>Banner</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quia ab praesentium omnis, quas enim magnam atque perspiciatis fugit obcaecati, accusamus veniam aperiam at doloremque facere neque doloribus facilis. Dignissimos at minus excepturi ducimus cumque voluptates, facilis ullam voluptas necessitatibus commodi corrupti aspernatur autem veniam, dolor perspiciatis, sapiente fugit fuga architecto explicabo quos itaque nihil porro debitis enim! Illo exercitationem laborum iure accusamus dicta, repudiandae delectus tenetur! Ea numquam porro neque eaque ad! Deleniti aliquid voluptatem iure laborum quis a fuga laudantium eveniet fugiat ratione quam odio iste, dicta dolore alias voluptatum libero asperiores? Inventore cumque, dolores magni nihil dignissimos quis iusto dolorem natus sed itaque tenetur aut aspernatur iure sapiente earum? Commodi, illum? Quo commodi porro accusantium? Architecto, vitae. Alias repudiandae similique voluptatibus impedit hic nobis minus est officiis eveniet consectetur sint quo voluptate magnam provident praesentium vel accusamus, eum inventore deleniti totam quod aperiam, odio eius. Voluptatibus laudantium voluptas quas perspiciatis autem? Repellendus laborum suscipit aspernatur maiores corrupti nulla nobis, odit adipisci officiis numquam ad sit minima magnam possimus ullam vero, natus quidem blanditiis temporibus repudiandae cupiditate, et fugiat! Voluptatem quibusdam quidem eum, accusamus voluptas nihil dolorum ratione sint recusandae optio animi sapiente odit assumenda corporis? Sequi id atque ipsum magnam voluptate, esse, laboriosam soluta officiis cum eveniet quae vero voluptatibus temporibus accusantium minima numquam aliquid quasi quis ab alias? Dignissimos laudantium corrupti placeat labore accusantium, hic quae. Aut illum totam sapiente ea error quam corporis, consequuntur fuga fugit sit repellat exercitationem cum, possimus dolorem obcaecati dolore repellendus similique cupiditate sint architecto? Incidunt optio, tempore, a dolores dolorem quidem error consequuntur unde aliquam suscipit ullam molestias iure soluta illum sunt in consequatur laudantium explicabo! Doloribus, nobis, repudiandae cupiditate aperiam itaque necessitatibus odio ut eaque at consectetur earum? Ipsum vero laboriosam doloremque, sint ullam dolorem nemo consequatur eum maiores odit quidem quas esse temporibus eligendi delectus quisquam hic deserunt atque veritatis veniam. Sapiente ipsa ad omnis dignissimos voluptas molestiae incidunt hic earum sunt, eligendi minus aliquid sit provident ex et unde corrupti laboriosam recusandae quod reiciendis maxime ea eaque. Iusto optio, quibusdam molestias ipsa sunt asperiores earum reprehenderit necessitatibus modi tempora explicabo maiores omnis numquam odit fuga provident pariatur quam mollitia aut minima id corporis quo velit laborum. Accusantium sint quidem excepturi sunt reiciendis, illum animi amet, sed in officiis facilis ratione, totam adipisci molestiae. Natus id totam quis, aspernatur temporibus fugit aperiam, explicabo autem culpa, modi at iusto!</p>
+
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default Service

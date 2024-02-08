@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* index.css or App.css */
+.text-stroke {
+  -webkit-text-stroke-width: 1px; /* Set the stroke width */
+  -webkit-text-stroke-color: red; /* Set the stroke color */
+  color: white; /* Set the text color */
+}
