@@ -26,9 +26,6 @@ const Navbar = () => {
                     {/* Call to Action Button */}
                     <Button />
             </div>
-            <div className="absolute z-0 -top-30 bottom-3 left-[385px] transform translate-x-1">
-                <Circle />
-            </div>
         </nav>    
     </>
   )

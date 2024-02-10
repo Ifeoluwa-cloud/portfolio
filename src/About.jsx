@@ -10,8 +10,8 @@ import Imgblack2 from './assets/Imgblack2.png';
 
 const About = () => {
   return (
-    <div className="w-full flex justify-center items-center relative p-6 pl-0 mx-auto z-40 bg-[#1e1e24]">
-        <div className="text-[#fafafa]">
+    <div className="w-full flex justify-center items-center relative px-28 py-16 pl-0 mx-auto z-40 bg-[#1e1e24]">
+        <div className="text-[#fafafa] space-y-4">
           <div className='flex justify-around items-center gap-2'>
             <div className='w-1/4 relative'>
                 <div className='relative w-full h-80 mt-10 pt-2 bg-[#fafafa] rounded-r-full overflow-hidden'>
@@ -28,8 +28,8 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className='flex items-center justify-center mt-1'>
-              <div className='w-4/5 grid grid-cols-4 gap-6 my-10 justify-items-center items-center'>
+          <div className='flex items-center justify-center'>
+              <div className='w-full grid grid-cols-4 gap-8 pl-28 mt-4 justify-items-center items-center'>
                 <img className='w-16' src={html} alt="" />
                 <img className='w-16' src={css} alt="" />
                 <img className='w-16' src={tailwind} alt="" />
