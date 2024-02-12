@@ -12,7 +12,7 @@ const Portfolio = () => {
                     </div>
                 </div>
                 <div className='bg-[#F7F7F7] py-12 px-28'>
-                    <div className="grid grid-cols-4 gap-4">
+                    <div className="grid grid-cols-3 gap-4">
                         <div className="border py-10 md:px-6 px-4 rounded-[35px] shadow-3xl">
                             <img src="" alt="" />
                             <h3 className="font-semibold mb-4">Design</h3>
@@ -32,6 +32,16 @@ const Portfolio = () => {
                             <img src="" alt="" />
                             <h3 className="font-semibold mb-4">Design</h3>
                             <p className="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti doloribus itaque atque ipsum! Earum harum exercitationem iste! Explicabo, eum animi!</p>
+                        </div>
+                        <div className="border py-10 md:px-6 px-4 rounded-[35px] shadow-3xl">
+                            <img src="" alt="" />
+                            <h3 className="font-semibold mb-4">Design</h3>
+                            <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quis tempora architecto fugit accusantium aperiam velit ab voluptatibus nobis? Blanditiis?</p>
+                        </div>
+                        <div className="border py-10 md:px-6 px-4 rounded-[35px] shadow-3xl">
+                            <img src="" alt="" />
+                            <h3 className="font-semibold mb-4">Design</h3>
+                            <p className="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat quis tempora architecto fugit accusantium aperiam velit ab voluptatibus nobis? Blanditiis?</p>
                         </div>
                     </div>
                 </div>

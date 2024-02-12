@@ -1,9 +1,9 @@
 import './App.css';
 import Home from './components/Home';
 import About from './About';
-import Navbar from './components/Navbar';
 import Service from './Service';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
           <About />
           <Service />
           <Portfolio />
+          <Contact />
       </>
   )
 }
