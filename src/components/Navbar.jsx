@@ -1,34 +1,65 @@
+import { useState } from "react";
 import Button from "./features/Button";
-import Circle from "./features/Circle";
-const Navbar = () => {
-    let Links = [
-        {name: 'Home', link: '/'},
-        {name: 'About', link: '/' },
-        {name: 'Service', link: '/'},
-        {name: 'Contact', link: '/' }
-    ]
+import { FaBars, FaTimes } from "react-icons/fa";
+
+const Navbar = ({ content }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  let Links = [
+    { name: 'Home', link: '#home' },
+    { name: 'About', link: '#about' },
+    { name: 'Service', link: '#service' },
+    { name: 'Portfolio', link: '#portfolio' },
+  ];
+  
+
   return (
     <>
-        <nav className='md:px-14 px-4 max-w-screen-2xl mx-auto text-primary relative mt-0 right-0 left-0'>
-            <div className='text-lg font-semibold mx-auto flex justify-between items-center z-50'>
-                    {/*logo here */}
-                    <div className="font-extrabold">GIO<span className="text-red-500">Code</span></div>
+      <nav className="px-4 md:px-14 max-w-screen-2xl mx-auto text-primary relative">
+        <div className="flex justify-between items-center text-lg font-semibold py-4">
+          {/* Logo */}
+          <div className="font-extrabold text-xl">
+            GIO<span className="text-red-500">Code</span>
+          </div>
 
-                    {/*nav links here */}
-                    <ul className="flex pl-10 md:pl-0 z-2">
-                        {Links.map(({ name, link }) => (
-                            <li className="my-7 md:my-0 md:ml-10 block hover:text-gray-30 z-50" key={name}>
-                                <a href={link}>{name}</a>
-                            </li>
-                        ))}
-                    </ul>
+          {/* Hamburger menu icon on mobile */}
+          <div className="md:hidden text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </div>
 
-                    {/* Call to Action Button */}
-                    <Button />
-            </div>
-        </nav>    
+          {/* Desktop Links + Button */}
+          <div className="hidden md:flex items-center gap-10">
+            <ul className="flex gap-10">
+                {Links.map(({ name, link }) => (
+                  <li key={name} className="hover:text-red-600">
+                    <a href={link}>{name}</a>
+                  </li>
+                ))}
+            </ul>
+            <a href="#contact">
+              <Button content="Contact" />
+            </a>
+          </div>
+        </div>
+
+        {/* Mobile menu - visible only when menuOpen is true */}
+        {menuOpen && (
+          <div className="md:hidden flex flex-col items-start gap-6 pb-6">
+            <ul className="flex flex-col gap-4 w-full">
+              {Links.map(({ name, link }) => (
+                <li key={name} className="hover:text-red-600 border-b pb-2 w-full">
+                  <a href={link} onClick={() => setMenuOpen(false)}>
+                    {name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <Button content="Call Now" />
+          </div>
+        )}
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

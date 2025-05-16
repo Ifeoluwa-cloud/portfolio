@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import html from './assets/html.svg';
 import css from './assets/css.svg';
 import js from './assets/js.svg';
@@ -9,40 +10,99 @@ import vscode from './assets/vscode.svg';
 import Imgblack2 from './assets/Imgblack2.png';
 
 const About = () => {
+  const sectionVariants = {
+    hidden: { opacity: 0, y: 40 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.7,
+        ease: "easeInOut"
+      }
+    },
+  };
+
+  const containerVariants = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const iconVariants = {
+    hidden: { opacity: 0, scale: 0.5 },
+    show: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.4, type: "spring", stiffness: 120 },
+    },
+  };
+
   return (
-    <div className="w-full flex justify-center items-center relative px-28 py-16 pl-0 mx-auto z-40 bg-[#1e1e24]">
-        <div className="text-[#fafafa] space-y-4">
-          <div className='flex justify-around items-center gap-2'>
-            <div className='w-1/4 relative'>
-                <div className='relative w-full h-80 mt-10 pt-2 bg-[#fafafa] rounded-r-full overflow-hidden'>
-                    <img className='w-full object-cover' src={Imgblack2} alt="" />
-                </div>
-            </div>
-            
-            <div className='w-3/4'>
-              <h3 className="text-4xl font-bold mb-8 flex justify-center align-top">About Me</h3>
-              <p className="w-full px-20 text-base mx-auto leading-relaxed text-justify ">I'm Ifeoluwa Gbolahan, a seasoned Frontend Engineer dedicated to crafting immersive digital experiences. 
-                  With over three years of hands-on experience, I specialize in transforming UI/UX designs into responsive and user-friendly applications.
-                  My approach to development is driven by a commitment to excellence and a relentless pursuit of innovation. I thrive in collaborative environments, excelling in Agile methodologies and 
-                  version control with Git. Let's connect and explore how we can elevate your projects together.
-              </p>
-            </div>
+    <motion.div
+      className="bg-[#1e1e24] py-16"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.3 }}
+      variants={containerVariants}
+    >
+      <div className="w-full flex flex-col md:flex-row justify-center items-center relative px-6 md:px-28 pb-4">
+        {/* Image */}
+        <motion.div
+          className="hidden md:flex w-full md:w-1/3 justify-center mb-8 md:mb-0"
+          variants={sectionVariants}
+        >
+          <div className="w-60 h-80 bg-white rounded-r-full overflow-hidden">
+            <img
+              className="w-full h-full pt-2 object-cover object-top md:object-[0_15%]"
+              src={Imgblack2}
+              alt="profile"
+            />
           </div>
-          <div className='flex items-center justify-center'>
-              <div className='w-full grid grid-cols-4 gap-8 pl-28 mt-4 justify-items-center items-center'>
-                <img className='w-16' src={html} alt="" />
-                <img className='w-16' src={css} alt="" />
-                <img className='w-16' src={tailwind} alt="" />
-                <img className='w-16' src={js} alt="" />
-                <img className='w-16' src={reactLogo} alt="" />
-                <img className='w-16' src={git} alt="" />
-                <img className='w-16 ' src={github} alt="" />
-                <img className='w-16' src={vscode} alt="" />
-              </div>
-          </div>
-        </div>
-    </div>
-  )
-}
+        </motion.div>
+
+        {/* Text */}
+        <motion.div
+          className="w-full md:w-2/3 px-4 md:px-10 text-white"
+          variants={sectionVariants}
+        >
+          <h3 className="text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
+            About Me
+          </h3>
+          <p className="text-sm md:text-base leading-relaxed text-justify">
+            I&apos;m Ifeoluwa Gbolahan, a passionate and detail-oriented Frontend Developer currently working with Brytahub, where I craft responsive, high-performance web interfaces that elevate user experiences.
+            <br /><br />
+            With hands-on experience in HTML, CSS, JavaScript (ES6+), React, Tailwind CSS, Git, GitHub, and VS Code, I specialize in building clean, scalable, and maintainable codebases. I’m a strong advocate for mobile-first design and accessibility, ensuring every project works flawlessly across all devices.
+            <br /><br />
+            I&apos;m actively seeking frontend development roles where I can contribute to impactful products, collaborate with inspiring teams, and continue sharpening my skills in modern frameworks and tools.
+            <br /><br />
+            Outside of tech, I&apos;m a football enthusiast and a loyal Chelsea FC supporter. Whether it’s coding a new feature or watching match highlights, I bring the same energy and focus to everything I do.
+            <br /><br />
+            Let’s build something amazing together!
+          </p>
+        </motion.div>
+      </div>
+
+      {/* Icons */}
+      <motion.div
+        className="grid grid-cols-3 sm:grid-cols-4 gap-6 px-6 md:px-28 pt-10 justify-items-center"
+        variants={containerVariants}
+      >
+        {[html, css, tailwind, js, reactLogo, git, github, vscode].map((icon, index) => (
+          <motion.img
+            key={index}
+            src={icon}
+            alt={`tech-${index}`}
+            className="w-12 md:w-16"
+            variants={iconVariants}
+          />
+        ))}
+      </motion.div>
+    </motion.div>
+  );
+};
 
 export default About;
