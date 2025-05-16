@@ -42,7 +42,7 @@ const Profile = () => {
 
   return (
     <motion.div
-      className="w-full max-w-screen-2xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+      className="w-full h-screen max-w-screen-2xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
