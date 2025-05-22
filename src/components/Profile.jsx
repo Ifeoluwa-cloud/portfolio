@@ -68,7 +68,13 @@ const Profile = () => {
           </motion.div>
 
           <motion.div className="mt-8" variants={textVariants}>
-            <Button content="DOWNLOAD CV" />
+            <a
+              href="https://drive.google.com/uc?export=download&id=1ABCxyz123456789"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button content="DOWNLOAD CV" />
+            </a>
           </motion.div>
         </div>
       </motion.div>

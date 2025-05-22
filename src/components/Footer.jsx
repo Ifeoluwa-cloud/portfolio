@@ -21,13 +21,13 @@ const Footer = () => {
 
         {/* Social Icons */}
         <div className="flex space-x-4 mt-6 md:mt-0">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xl">
+          <a href="https://github.com/Ifeoluwa-cloud" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xl">
             <FaGithub />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xl">
+          <a href="https://linkedin.com/in/ifeoluwagbolahan/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xl">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xl">
+          <a href="https://x.com/ifeoluwag90" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white text-xl">
             <FaTwitter />
           </a>
         </div>

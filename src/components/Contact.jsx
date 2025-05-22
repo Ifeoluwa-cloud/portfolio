@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect, } from 'react';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
 
@@ -142,21 +143,41 @@ const Contact = () => {
                 Contact Information
               </motion.h3>
               <motion.p className="mb-4 text-gray-600" variants={fadeIn}>
-                I’m open to freelance work, remote roles, or collaborative projects.
+                I’m a frontend engineer available for remote, hybrid, or onsite roles, and ready to build scalable, user-friendly web experiences.
               </motion.p>
 
               <motion.ul className="space-y-3 text-gray-700 mb-6" variants={fadeIn}>
-                <li><strong>Email:</strong> ifeoluwagbolahan.dev@gmail.com</li>
+                <li><strong>Email:</strong> gbolahanifeoluwaolaide@gmail.com</li>
                 <li><strong>Location:</strong> Osogbo, Nigeria (Open to remote)</li>
               </motion.ul>
 
               <motion.div className="flex space-x-4" variants={fadeIn}>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                  <img src="/github-icon.svg" alt="GitHub" className="w-6 h-6" />
-                </a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                  <img src="/linkedin-icon.svg" alt="LinkedIn" className="w-6 h-6" />
-                </a>
+                <div className="flex space-x-4 mt-6 md:mt-0">
+                  <a
+                    href="https://github.com/Ifeoluwa-cloud"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-500 hover:text-black text-xl"
+                  >
+                    <FaGithub />
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/ifeoluwagbolahan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 text-xl"
+                  >
+                    <FaLinkedin />
+                  </a>
+                  <a
+                    href="https://x.com/ifeoluwag90"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-600 text-xl"
+                  >
+                    <FaTwitter />
+                  </a>
+                </div>
               </motion.div>
             </div>
 

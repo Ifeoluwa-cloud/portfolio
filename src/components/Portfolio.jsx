@@ -1,37 +1,37 @@
 import { motion } from "framer-motion";
 import { FiExternalLink } from "react-icons/fi";
 
-import Port1 from "../assets/Port1.svg";
-import Port2 from "../assets/Port2.svg";
-import Port3 from "../assets/Port3.svg";
-import Port4 from "../assets/Port4.svg";
+import Port1 from "../assets/Port 1.png";
+import Port2 from "../assets/Port 2.png";
+import Port3 from "../assets/Port 3.png";
+import Port4 from "../assets/Port 4.png";
 import Port5 from "../assets/Port5.svg";
 import Port6 from "../assets/Port6.svg";
 
 const projects = [
   {
     image: Port1,
-    title: "E-Commerce Platform",
-    description: "A modern e-commerce web app with secure authentication, product filtering, and Stripe payments.",
-    link: "https://example.com/ecommerce"
+    title: "KSB Betting",
+    description: "KSB is a membership-based website where you can access accurate predictions for your favorite sports events.",
+    link: "https://ksbet.netlify.app/"
   },
   {
     image: Port2,
-    title: "Job Tracker App",
-    description: "A full-featured job application tracker with advanced filters, analytics, and resume management.",
-    link: "https://example.com/job-tracker"
+    title: "Highlight Academy",
+    description: "Highlight is a learning Saas platform that empowers students to develop their skills.",
+    link: "https://highlightacademyweb.netlify.app/"
   },
   {
     image: Port3,
-    title: "Crypto Dashboard",
-    description: "A responsive dashboard providing real-time data visualization and price tracking for top cryptocurrencies.",
-    link: "https://example.com/crypto-dashboard"
+    title: "GIOcode Portfolio",
+    description: "A responsive personal and professional portfolio showcasing projects and an interactive contact form.",
+    link: "https://portfoliodevapp.netlify.app/"
   },
   {
     image: Port4,
-    title: "Portfolio Website",
-    description: "A sleek personal portfolio showcasing projects, blogs, and an interactive contact form.",
-    link: "https://example.com/portfolio"
+    title: "Quiz App",
+    description: "An interactive quiz web App where you can assess questions to test your React Mastery.",
+    link: "https://dequiz.netlify.app/"
   },
 ];
 
