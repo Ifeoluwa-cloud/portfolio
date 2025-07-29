@@ -43,7 +43,7 @@ const About = () => {
 
   return (
     <motion.div
-      className="bg-[#1e1e24] py-16"
+      className=" min-h-screen bg-[#1e1e24] py-16 md:h-screen"
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.3 }}

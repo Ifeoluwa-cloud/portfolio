@@ -54,7 +54,7 @@ const Contact = () => {
 
   return (
     <motion.section
-      className="bg-[#FFD4D0] py-20 px-6 md:px-28 relative z-50"
+      className="w-full min-h-screen bg-[#FFD4D0] px-6 md:px-28 py-12 md:py-20 relative z-50 flex items-center justify-center"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
@@ -80,7 +80,7 @@ const Contact = () => {
           <motion.form
             ref={form}
             onSubmit={sendEmail}
-            className="space-y-6 bg-white p-8 rounded-lg shadow-lg"
+            className="space-y-4 bg-white p-8 rounded-lg shadow-lg"
             variants={fadeInUp}
           >
             <motion.div variants={fadeIn}>

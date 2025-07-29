@@ -42,15 +42,16 @@ const Profile = () => {
 
   return (
     <motion.div
-      className="w-full h-full pt-8 md:pt-0 max-w-screen-2xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center justify-between gap-12"
+      className="w-full h-full gap-16 md:pt-0 max-w-screen-2xl mx-auto px-6 md:px-12 flex flex-col-reverse md:flex-row items-center justify-center gap-x-8"      
       variants={containerVariants}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.3 }}
     >
+
       {/* Text Section */}
       <motion.div
-        className="w-full md:w-1/2 text-center md:text-left"
+        className="w-full md:w-1/2 text-center md:text-left pb-32"
         variants={textVariants}
       >
         <div className="space-y-8">
@@ -69,31 +70,32 @@ const Profile = () => {
 
           <motion.div className="mt-8" variants={textVariants}>
             <a
-              href="https://drive.google.com/uc?export=download&id=1ABCxyz123456789"
+              href="https://drive.google.com/uc?export=download&id=1KRlmQxDZ1SVGX2P8FVUIjhH_hJHHQiu7"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button content="DOWNLOAD CV" />
             </a>
           </motion.div>
+
         </div>
       </motion.div>
 
       {/* Image Section */}
       <motion.div
-        className={`w-full md:w-1/2 flex justify-center ${
+        className={`w-full md:w-fit flex justify-center ${
           isSmallScreen ? "overflow-hidden" : "overflow-visible"
         }`}
         variants={imageVariants}
       >
         <motion.div
-          className="relative w-64 h-64 md:w-96 md:h-96 bg-red-500 rounded-full flex items-end justify-center shadow-lg overflow-hidden md:overflow-visible"
+          className="relative w-64 h-64 md:w-fit h-fit bg-red-500 rounded-full flex items-end justify-center shadow-lg overflow-hidden hgt-lg:overflow-hidden md:overflow-visible"
           variants={imageVariants}
         >
           <motion.img
             src={Imgblack}
             alt="Profile"
-            className="w-52 md:w-80 object-cover relative top-6 md:top-24 z-10"
+            className="w-52 object-cover relative top-6 md:top-24 z-10 w-fit h-fit"
             variants={imageVariants}
           />
         </motion.div>

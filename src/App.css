@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-html {
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -14,3 +17,5 @@ body{
   -webkit-text-stroke-color: red; /* Set the stroke color */
   color: white; /* Set the text color */
 }
+
+

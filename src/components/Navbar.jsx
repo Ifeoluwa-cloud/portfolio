@@ -15,7 +15,7 @@ const Navbar = ({ content }) => {
 
   return (
     <>
-      <nav className="px-4 md:px-14 max-w-screen-2xl mx-auto text-primary relative">
+      <nav className="px-4 pt-4 md:px-14 pt-8 max-w-screen-2xl mx-auto text-primary relative">
         <div className="flex justify-between items-center text-lg font-semibold py-4">
           {/* Logo */}
           <div className="font-extrabold text-xl">

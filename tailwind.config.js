@@ -10,7 +10,10 @@ export default {
         '1': '1px',
         '2': '2px',
       }),
-      textStrokeColor: theme => theme('colors')
+      textStrokeColor: theme => theme('colors'),
+      screens: {
+        'hgt-lg': { raw: '(min-height: 950px)' }, // custom screen height
+      }
     },
   },
   plugins: [],

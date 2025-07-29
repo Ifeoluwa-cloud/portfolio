@@ -51,7 +51,7 @@ const textVariants = {
 const Portfolio = () => {
   return (
     <motion.section
-      className="w-full flex flex-col items-center bg-[#fdfdfd] py-16 px-6 md:px-28"
+      className="w-full min-h-screen flex flex-col items-center bg-[#fdfdfd] py-16 px-6 md:px-28 flex items-center justify-center"
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.2 }}
