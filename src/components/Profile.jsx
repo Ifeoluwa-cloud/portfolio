@@ -70,7 +70,7 @@ const Profile = () => {
 
           <motion.div className="mt-8" variants={textVariants}>
             <a
-              href="https://drive.google.com/uc?export=download&id=1KRlmQxDZ1SVGX2P8FVUIjhH_hJHHQiu7"
+              href="https://drive.google.com/uc?export=download&id=1xTCfhOOfr74RQLFl-JXuYVGyweINXidN"
               target="_blank"
               rel="noopener noreferrer"
             >
